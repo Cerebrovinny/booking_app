@@ -33,10 +33,10 @@ func main() {
 	bookings[0] = firstName + " " + lastName
 	bookings = append(bookings, firstName+" "+lastName)
 
-	fmt.Printf("The whole array: %v\n", bookings)
-	fmt.Printf("Thefirst value: %v\n", bookings[0])
-	fmt.Printf("Array type: %T\n", bookings)
-	fmt.Printf("Array length: %v\n", len(bookings))
+	// fmt.Printf("The whole array: %v\n", bookings)
+	// fmt.Printf("Thefirst value: %v\n", bookings[0])
+	// fmt.Printf("Array type: %T\n", bookings)
+	// fmt.Printf("Array length: %v\n", len(bookings))
 
 	fmt.Printf("The first value: ")
 
