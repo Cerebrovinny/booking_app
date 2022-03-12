@@ -43,7 +43,7 @@ func main() {
 
 		fmt.Printf("The first value: ")
 
-		fmt.Printf("Thank you %v %v for booking %v tickets. You will receive a confirmation email at %v\n", firstName, lastName, email, userTickets)
+		fmt.Printf("Thank you %v %v for booking %v tickets. You will receive a confirmation email at %v\n", firstName, lastName, userTickets, email)
 		fmt.Printf("%v tickets remaining for %v\n", remainingTickets, conferenceName)
 
 		firstNames := []string{}
@@ -54,6 +54,13 @@ func main() {
 		}
 		fmt.Printf("The first name of bookings are: %v\n", firstNames)
 		fmt.Printf("These are all our bookings: %v\n", bookings)
+
+		var noTicketsRemaining bool = remainingTickets == 0
+		// noTicketsRemaining := remainingTickets == 0
+		if noTicketsRemaining {
+			fmt.Println("Our conference is booked out. Come back next year.")
+			break
+		}
 	}
 
 }
